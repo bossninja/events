@@ -29,8 +29,11 @@ class Plugin_Event extends Plugin
 			->get('events')
 			->result_array();
 		
+		$index=0;
+		
 		foreach($result as $row){
 			$data[]=array(
+				'index'=>$index++
 				'id'=>$row['id'],
 				'name'=>$row['name'],
 				'timestamp'=>strtotime($row['event_date']),
