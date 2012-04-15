@@ -33,7 +33,7 @@ class Plugin_Event extends Plugin
 		
 		foreach($result as $row){
 			$data[]=array(
-				'index'=>$index++
+				'index'=>$index++,
 				'id'=>$row['id'],
 				'name'=>$row['name'],
 				'timestamp'=>strtotime($row['event_date']),
