@@ -41,7 +41,7 @@ class Plugin_Event extends Plugin
 			);
 		}
 		
-		return $data;
+		return isset($data) ? $data : array();
 	}
 }
 

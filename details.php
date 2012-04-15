@@ -80,6 +80,7 @@ class Module_Event extends Module {
 				`location` VARCHAR(255) NOT NULL,
 				`created_on` TIMESTAMP NOT NULL,
 				`modified_on` DATE NULL,
+				`fbpage_id` bigint(20) NOT NULL,
 				PRIMARY KEY (`id`)
 			) ENGINE=InnoDB DEFAULT CHARSET=utf8
 		";
